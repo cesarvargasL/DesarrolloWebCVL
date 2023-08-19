@@ -1,0 +1,159 @@
+body {
+  background-color: #FFF;
+  font-family: 'Roboto', 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav_principal {
+  padding-top: 2rem;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(196, 196, 196);
+  border: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  flex-direction: row;
+}
+
+.nav_principal li a:link,
+.nav_principal li a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav_principal li a:hover {
+  color: rgb(115, 93, 151);
+}
+
+.container_ys {
+  color: #ffffff;
+  max-width: 100%;/* Asegura que la imagen no se desborde del contenedor */
+  font-size: 1.5rem;
+  width: 100%;
+  height: 550px; /* Establece la altura deseada para tu div */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el div */
+  background-position: center; /* Alinea la imagen en el centro del div */
+  background-image: url(images/fondo1.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.container_ys img {
+  border-radius: 100%;
+  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  width: 100%;
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+  padding-left: 2rem;
+}
+
+.acerca_de_mi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120vh;
+  background-image: url(images/fondo_acerca_de_mi.jpg);
+}
+
+.acerca_de_mi-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  align-content: start;
+  background-color: rgba(255, 255, 255);
+  padding: 20px;
+  width: 70%; /* Ancho del cuadro pequeño */
+  height: 85%; /* Altura del cuadro pequeño */
+}
+
+.mis_logros_contenido {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mis_habilidades_contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* Anexo a otras paginas*/
+.anexo_text {
+  padding-bottom: 0px;
+}
+
+.anexo_list {
+  height: 250px;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  gap: 20rem;
+  align-items: center;
+  background-color: #FFF;
+  flex-wrap: nowrap;
+  
+}
+
+.anexo_list img {
+  padding-left: 2rem;
+  width: 400px;
+}
+
+.anexo div {
+  text-align: center;
+}
+
+.lista li{
+  list-style: none; /* Elimina los puntos de la lista */
+  margin-bottom: 1rem; /* Agrega un espacio entre los elementos de la lista */
+}
+
+.lista li a:link{
+  font-size: 1.5rem;
+  text-decoration: none; /* Elimina la decoración de enlace (subrayado) */
+  color: #252525; /* Cambia el color del texto del enlace */
+  font-weight: bold; /* Agrega un peso de fuente en negrita */
+}
+
+.lista li a:visited {
+  text-decoration: none;
+  color: #252525;
+} 
+
+.lista li a:hover {
+  color: rgb(115, 93, 151);
+}
+
+/* Informacion usuario */
+.info_usuario {
+  padding-left: 1.5rem;
+}
+
+/* Contacto */
+.contacto {
+  background-color: rgb(78, 86, 126);
+  height: 250px;
+}
+
+.contacto h1 {
+  padding-top: 2rem;
+  text-align: center;
+}
+.redes_sociales {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
