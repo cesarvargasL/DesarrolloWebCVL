@@ -1,23 +1,36 @@
 body {
-  background-color: #FFF;
+  background-color: rgb(255, 255, 255);
   font-family: 'Roboto', 'Verdana', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* barra cabecera */
+
+.encabezado {
+  background-color: rgb(196, 196, 196);
+  height: 83px;
+}
+
 .nav_principal {
+  background-color: rgb(196, 196, 196,0.84);
   padding-top: 2rem;
   width: 100%;
   height: 50px;
-  background-color: rgb(196, 196, 196);
   border: 100%;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
   list-style: none;
   flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease; 
+  color: black;
 }
+
 
 .nav_principal li a:link,
 .nav_principal li a:visited {
@@ -29,8 +42,10 @@ body {
   color: rgb(115, 93, 151);
 }
 
-.container_ys {
+/* foto e informacion corta */
+.contenedor-yo-soy {
   color: #ffffff;
+  
   max-width: 100%;/* Asegura que la imagen no se desborde del contenedor */
   font-size: 1.5rem;
   width: 100%;
@@ -42,29 +57,30 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3.5rem;
 }
 
-.container_ys img {
-  border-radius: 100%;
+.contenedor-yo-soy img {
+  border-radius: 49%;
   max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
   width: 100%;
   height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
   padding-left: 2rem;
 }
 
-.acerca_de_mi {
+/* Aprtado acerca de mi y posteriores*/
+.contenedor-inf-mia {
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 120vh;
+  height: 130vh;
   background-image: url(images/fondo_acerca_de_mi.jpg);
 }
 
-.acerca_de_mi-contenido {
+.contenedor-inf-mia-contenido {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -76,25 +92,31 @@ body {
   height: 85%; /* Altura del cuadro pequeño */
 }
 
-.mis_logros_contenido {
+/* Mis logros */
+.inf-mia-mis-logros {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.mis_habilidades_contenido {
+/* Mis habilidades */
+.inf-mia-mis-habilidades {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
+  flex-wrap: wrap;
+  line-height: 30px;
 }
+
 
 /* Anexo a otras paginas*/
-.anexo_text {
+.contenedor-anexos {
   padding-bottom: 0px;
+  text-align: center;
 }
 
-.anexo_list {
+.contenedor-anexos-lista{
   height: 250px;
   display: flex;
   justify-content: start;
@@ -106,52 +128,69 @@ body {
   
 }
 
-.anexo_list img {
+.contenedor-anexos-lista img {
   padding-left: 2rem;
   width: 400px;
 }
 
-.anexo div {
-  text-align: center;
-}
 
-.lista li{
+.anexos-lista-desordenada li{
   list-style: none; /* Elimina los puntos de la lista */
   margin-bottom: 1rem; /* Agrega un espacio entre los elementos de la lista */
 }
 
-.lista li a:link{
+.anexos-lista-desordenada li a:link{
   font-size: 1.5rem;
   text-decoration: none; /* Elimina la decoración de enlace (subrayado) */
   color: #252525; /* Cambia el color del texto del enlace */
   font-weight: bold; /* Agrega un peso de fuente en negrita */
 }
 
-.lista li a:visited {
+.anexos-lista-desordenada li a:visited {
   text-decoration: none;
   color: #252525;
 } 
 
-.lista li a:hover {
+.anexos-lista-desordenada li a:hover {
   color: rgb(115, 93, 151);
 }
 
 /* Informacion usuario */
-.info_usuario {
+.inf-usuario {
   padding-left: 1.5rem;
 }
 
-/* Contacto */
-.contacto {
-  background-color: rgb(78, 86, 126);
-  height: 250px;
+.inf-usuario-form-submit {
+  font-size: 1rem;
+  margin: 1rem 0 2rem 0;
+  padding: 0.7rem;
+  border-radius: 15%;
+  background-color: rgb(195, 194, 238);
+  color: rgb(43, 42, 42);
+  
 }
 
-.contacto h1 {
+.inf-usuario-form-submit:hover{
+  color: rgba(255, 255, 255);
+  background-color: rgb(78, 86, 126);
+  transform: scale(1.1);
+  transition: background-color ease 0.1s;
+}
+
+/* Contacto */
+.pie-pagina {
+  background-color: rgb(78, 86, 126);
+  color: rgba(255, 255, 255);
+  height: 250px;
   padding-top: 2rem;
   text-align: center;
+  justify-content: center;
 }
-.redes_sociales {
+.pie-pagina p{
+  padding-top: 2rem;
+}
+
+.contenedor-redes-sociales {
   padding-top: 2rem;
   display: flex;
   justify-content: center;
