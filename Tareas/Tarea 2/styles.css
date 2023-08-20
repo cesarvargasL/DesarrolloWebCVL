@@ -14,7 +14,7 @@ body {
 }
 
 .nav_principal {
-  background-color: rgb(196, 196, 196,0.84);
+  background-color: rgb(196, 196, 196, 0.84);
   padding-top: 2rem;
   width: 100%;
   height: 50px;
@@ -27,7 +27,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: background-color 0.5s ease; 
+  transition: background-color 0.5s ease;
   color: black;
 }
 
@@ -45,15 +45,19 @@ body {
 /* foto e informacion corta */
 .contenedor-yo-soy {
   color: #ffffff;
-  
-  max-width: 100%;/* Asegura que la imagen no se desborde del contenedor */
+  max-width: 100%;
+  /* Asegura que la imagen no se desborde del contenedor */
   font-size: 1.5rem;
   width: 100%;
-  height: 550px; /* Establece la altura deseada para tu div */
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el div */
-  background-position: center; /* Alinea la imagen en el centro del div */
+  height: 550px;
+  /* Establece la altura deseada para tu div */
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen para cubrir el div */
+  background-position: center;
+  /* Alinea la imagen en el centro del div */
   background-image: url(images/fondo1.jpg);
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -62,9 +66,11 @@ body {
 
 .contenedor-yo-soy img {
   border-radius: 49%;
-  max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  max-width: 100%;
+  /* Asegura que la imagen no se desborde del contenedor */
   width: 100%;
-  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+  height: auto;
+  /* Ajusta automáticamente la altura para mantener la proporción */
   padding-left: 2rem;
 }
 
@@ -88,15 +94,17 @@ body {
   align-content: start;
   background-color: rgba(255, 255, 255);
   padding: 20px;
-  width: 70%; /* Ancho del cuadro pequeño */
-  height: 85%; /* Altura del cuadro pequeño */
+  width: 70%;
+  /* Ancho del cuadro pequeño */
+  height: 85%;
+  /* Altura del cuadro pequeño */
 }
 
 /* Mis logros */
 .inf-mia-mis-logros {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   gap: 1rem;
 }
 
@@ -116,7 +124,7 @@ body {
   text-align: center;
 }
 
-.contenedor-anexos-lista{
+.contenedor-anexos-lista {
   height: 250px;
   display: flex;
   justify-content: start;
@@ -125,7 +133,7 @@ body {
   align-items: center;
   background-color: #FFF;
   flex-wrap: nowrap;
-  
+
 }
 
 .contenedor-anexos-lista img {
@@ -134,22 +142,27 @@ body {
 }
 
 
-.anexos-lista-desordenada li{
-  list-style: none; /* Elimina los puntos de la lista */
-  margin-bottom: 1rem; /* Agrega un espacio entre los elementos de la lista */
+.anexos-lista-desordenada li {
+  list-style: none;
+  /* Elimina los puntos de la lista */
+  margin-bottom: 1rem;
+  /* Agrega un espacio entre los elementos de la lista */
 }
 
-.anexos-lista-desordenada li a:link{
+.anexos-lista-desordenada li a:link {
   font-size: 1.5rem;
-  text-decoration: none; /* Elimina la decoración de enlace (subrayado) */
-  color: #252525; /* Cambia el color del texto del enlace */
-  font-weight: bold; /* Agrega un peso de fuente en negrita */
+  text-decoration: none;
+  /* Elimina la decoración de enlace (subrayado) */
+  color: #252525;
+  /* Cambia el color del texto del enlace */
+  font-weight: bold;
+  /* Agrega un peso de fuente en negrita */
 }
 
 .anexos-lista-desordenada li a:visited {
   text-decoration: none;
   color: #252525;
-} 
+}
 
 .anexos-lista-desordenada li a:hover {
   color: rgb(115, 93, 151);
@@ -167,10 +180,10 @@ body {
   border-radius: 15%;
   background-color: rgb(195, 194, 238);
   color: rgb(43, 42, 42);
-  
+
 }
 
-.inf-usuario-form-submit:hover{
+.inf-usuario-form-submit:hover {
   color: rgba(255, 255, 255);
   background-color: rgb(78, 86, 126);
   transform: scale(1.1);
@@ -186,7 +199,8 @@ body {
   text-align: center;
   justify-content: center;
 }
-.pie-pagina p{
+
+.pie-pagina p {
   padding-top: 2rem;
 }
 
@@ -195,4 +209,65 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+/* MI FAMILIA */
+.encabezado-familia {
+  background-color: rgb(196, 196, 196);
+  height: 83px;
+}
+
+.nav-principal-familia {
+  border: blue solid 1px;
+  background-color: rgb(196, 196, 196, 0.84);
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+  color: rgb(255, 255, 255);
+  align-content: center;
+  align-items: center;
+}
+
+.contenedor-logos-familia {
+  border: red solid 1px;
+  width: 500px;
+  padding-left: 1rem;
+}
+
+.nav-principal-familia img {
+  height: 78px;
+}
+
+.nav-principal-familia h1 {
+  border: aqua solid 1px;
+  width: 900px;
+  font-size: 3rem;
+  color: inherit;
+}
+
+.contenedor-texto-familia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  border: green solid 1px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  width: 500px;
+}
+
+.nav-principal-familia p a:link,
+.nav-principal-familia p a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav-principal-familia p a:hover {
+  color: rgb(176, 216, 191);
 }
