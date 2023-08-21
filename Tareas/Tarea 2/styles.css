@@ -271,7 +271,7 @@ body {
 }
 
 /* Main familiar*/
-main {
+.main-familia {
   background-color: antiquewhite;
 }
 
@@ -305,6 +305,7 @@ main {
 /* INTEGRANTES */
 
 .contenedor-integrantes-familia{
+  padding-top: 2rem ;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -314,8 +315,8 @@ main {
 }
 
 .item1-contenedor-integrantes-familia {
-  background-color: rgb(97, 128, 230);
-  height: 350px;
+  background-image: url("images/arbol-familiar.jpg");
+  height: 450px;
   justify-content: center;
   align-content: center;
   align-content: center;
@@ -328,21 +329,237 @@ main {
   align-items: center;
 }
 
+.contenedor-txt-integrantes {
+  color: rgb(38, 95, 30);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 100px; /* Ajustamos el espacio interno del cuadro blanco */
+  height: 350px;
+  border-radius: 10px; /* Agregamos bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agregamos una sombra suave */
+}
+
 /* VIAJES */
 .item2-contenedor-viajes-familia {
-  background-color: rgb(232, 126, 114);
+  height: 350px;
+  color: rgb(38, 95, 30);
+  background-image: url("images/viajes-familia.jpg");
   justify-content: center;
-  align-content: center;
-}
-
-.item2-contenedor-viajes-familia li{
-  list-style: none;
-  padding: 0; /* Elimina el relleno predeterminado de la lista */
-  margin: 0; /* Elimina el margen predeterminado de la lista */
-  list-style-position:inside; /* Coloca los números dentro del área de contenido */
   align-items: center;
-  line-height: 1.5;;
+  padding: 15px; /* Añadimos un espacio interno para separar el contenido del borde */
+  text-align: center; /* Centramos el texto en el contenedor */
 }
 
+.contenedor-txt-viajes {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px; /* Ajustamos el espacio interno del cuadro blanco */
+  border-radius: 10px; /* Agregamos bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agregamos una sombra suave */
+}
 
+.item2-contenedor-viajes-familia ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 1.5;
+}
 
+/* FOOTER */
+.pie-pagina-familia {
+  background-color: rgb(120, 147, 233);
+  color: rgba(255, 255, 255);
+  height: 210px;
+  padding-top: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* MIS AMIGOS */
+.encabezado-amigos {
+  background-color: rgb(196, 196, 196);
+  height: 83px;
+}
+
+.nav-principal-familia {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  align-content: center;
+  align-items: center;
+}
+
+.contenido-principal-amigos  {
+  color: rgb(70, 68, 68);
+  background-color: rgb(195, 194, 238);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.tabla-amigos {
+  background-image: url("images/amigos-tablas.jpg");
+  background-size:cover; /* Ajusta el tamaño de la imagen para cubrir el área */
+  background-repeat: no-repeat;
+  background-position: center center; /* Centra la imagen en el área */
+  position: relative;
+  background-color: aqua;
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contenido-tabla-amigos {
+  background-color: rgba(133, 204, 255,0.5);
+  border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+  width: 100%;
+  border: 1px solid black; /* Agrega un borde a toda la tabla */
+}
+
+.contenido-tabla-amigos th, 
+.contenido-tabla-amigosmi-tabla td, 
+.contenido-tabla-amigos {
+  border: 1px solid black; /* Agrega un borde a las celdas del encabezado y datos */
+  padding: 8px; /* Agrega espacio entre el contenido y los bordes */
+  text-align: left;
+}
+
+/* FOOTER */
+.pie-pagina-amigos {
+  background-color: rgb(118, 187, 164);
+  color: rgba(255, 255, 255);
+  height: 210px;
+  padding-top: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* MIS CIUDAD */
+.encabezado-ciudad {
+  background-color: rgb(196, 196, 196);
+  height: 83px;
+}
+
+.nav-principal-ciudad {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  align-content: center;
+  align-items: center;
+}
+
+.contenido-principal-ciudad  {
+  color: rgb(70, 68, 68);
+  background-color: rgb(195, 194, 238);
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenido-principal-ciudad a:link,
+.contenido-principal-ciudad a:visited {
+  font-size: 1.2rem;
+  text-decoration: none;
+  /* Elimina la decoración de enlace (subrayado) */
+  color: #252525;
+  /* Cambia el color del texto del enlace */
+  font-weight: bold;
+}
+
+.contenido-principal-ciudad a:hover {
+  color: rgb(115, 93, 151);
+}
+
+.inf-ciudad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/imagen-fondo-ciudad.jpg");
+  padding: 50px; /* Espacio alrededor del cuadro */
+}
+
+.cuadro-blanco {
+  background-color: white;
+  padding: 20px; /* Espacio interno del cuadro */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  max-width: 800px; /* Ancho máximo del cuadro */
+}
+
+.item1-inf-ciudad, .item-inf-ciudad {
+  margin: 20px 0; /* Espacio entre los elementos internos */
+}
+
+.pie-pagina-ciudad {
+  background-color: rgb(248, 52, 52);
+  color: rgba(255, 255, 255);
+  height: 210px;
+  padding-top: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+
+/* MIS HOBBIES */
+.encabezado-hobbies {
+  background-color: rgb(196, 196, 196);
+  height: 83px;
+}
+
+.nav-principal-hobbies {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  align-content: center;
+  align-items: center;
+}
+
+.centrado {
+  background-color: rgb(192, 73, 134);
+}
+.centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("images/fondo-imagen.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor-recuadro {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+.imagen-fondo {
+  background-image: url("images/amigos.jpg");
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pie-pagina-hobbies {
+  background-color: rgb(151, 59, 120);
+  color: rgba(255, 255, 255);
+  height: 210px;
+  padding-top: 2rem;
+  text-align: center;
+  justify-content: center;
+}
