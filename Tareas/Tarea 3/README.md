@@ -1,0 +1,2 @@
+Para resolver esta tarea consulte documentacion oficial de php, para poder usar funciones predefinidas del lenguaje
+por otro lado comente el codigo para su mejor entendimiento y teniendo en cuenta que es una buena practica de programación.
