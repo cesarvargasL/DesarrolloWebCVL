@@ -1,0 +1,5 @@
+Para poder revisar y visualizar la tarea debe hacer correr el archivo "tarea4.html",donde se encuentra el menu de acceso a las tablas de la base de datos "bd_alumnos", asi poder visualizar y probar el CRUD eficientemente de cada uno 💻 (previamente haber cargado la base de datos a su computador local 👀 y ejecutar XAMMP)
+
+La carpeta "bd" contiene la base de datos como tal, la cual lleva el nombre de "bd_alumno", tambien dentro esta el codigo del CRUD para cada tabla, tanto para alumnos como carreras, los cuales están separados por nombre en el archivo por ejemplo "read_alumno.php", para que sea mas entendible el codigo al revisar y reducir tamaño de codigo por archivo.
+
+El codigo se encuentra comentado puesto que mi persona lo hace como buena practica de prógramación, asi también el código sea entendible... 👀

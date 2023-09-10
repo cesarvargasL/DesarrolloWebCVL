@@ -1,0 +1,57 @@
+/* Página principal*/
+body {
+    background-color: #b3c7bb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #3b633f;
+    color: #fff;
+    overflow: hidden;
+}
+
+.contenedor-principal {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+  
+main {
+    background-color: white;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    line-height: 1;
+    width: 800px;
+    height: 300px;
+}
+
+main a:visited {
+    color:#36945a
+}
+
+main a:hover {
+    color: #3b633f;
+}
+  
+main a {
+    text-decoration: none ;
+}
+
+main ul {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+
+  
