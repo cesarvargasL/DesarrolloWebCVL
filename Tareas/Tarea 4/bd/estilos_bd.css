@@ -27,6 +27,20 @@
     overflow: hidden;
 }
 
+.inicio {
+padding-left: 25px;
+}
+
+.inicio a {
+text-decoration: none;
+font-size: 2rem;
+}
+
+.inicio a:visited {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+}
 
 .contenedor-principal {
     padding-top: 10px;
@@ -36,6 +50,9 @@
     height: 100vh;
 }
 
+.inicio a:hover {
+    color: #d4d4d4;
+}
 
 .form-alumno {
     display: flex;

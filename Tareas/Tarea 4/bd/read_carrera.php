@@ -9,8 +9,9 @@
 </head>
 
 <body class="body">
-    <nav class="nav-alumnos">
-      <div>
+    <nav class="nav-carreras">
+      <div class="inicio">         
+        <a href="http://localhost/DesarrolloWebCVL/Tareas/Tarea%204/tarea4.html">Inicio</a>
       </div>
       <div><h1>Universidad de Sucre</h1></div>
     </nav>
