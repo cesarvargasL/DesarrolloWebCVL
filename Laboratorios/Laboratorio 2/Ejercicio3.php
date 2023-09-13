@@ -1,4 +1,3 @@
-
 <?php
 $filas = $_POST['filas'];
 $columnas = $_POST['columnas'];

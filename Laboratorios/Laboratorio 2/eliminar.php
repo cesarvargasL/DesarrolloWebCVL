@@ -1,14 +1,16 @@
 <?php
-include "funcion.php";
+include 'funcion.php';
 
-$mayor = $_POST['mayor'];
-$vector = unserialize($_POST['vector']);
+$vector = $_POST["vector"];
+$numero = $_POST["numero"];
 
-if (is_numeric($mayor) && is_array($vector)) {
-    $resultado = eliminarmayores($vector, $mayor);
-    echo "El resultado de eliminar los elementos mayores a $mayor es: ";
-    print_r($resultado);
-} else {
-    echo "Los valores introducidos no son válidos.";
+$resultado = eliminarMayores($vector, $numero);
+
+echo "<h2>Resultado</h2>";
+echo "<p>El vector resultante después de eliminar los elementos mayores al número ".$numero. " introducido es:</p>";
+echo "<ul>";
+foreach ($resultado as $numero) {
+    echo "<li>$numero</li>";
 }
+echo "</ul>";
 ?>

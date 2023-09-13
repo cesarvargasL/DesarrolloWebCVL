@@ -1,15 +1,13 @@
 <?php
-function eliminarmayores($arreglo, $mayor) {
-    $nuevo = array();
-    foreach ($arreglo as $elemento) {
-        if ($elemento <= $mayor) {
-            $nuevo[] = $elemento;
+function eliminarMayores($numeros, $mayor) {
+    foreach ($numeros as $indice => $numero) {
+        if ($numero > $mayor) {
+            unset($numeros[$indice]);
         }
     }
-    return $nuevo;
+    return $numeros;
 }
 ?>
-
 
 
 
