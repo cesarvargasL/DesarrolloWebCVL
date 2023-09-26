@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+  </head>
+  <body>
+    <script>
+      function parOImpar(n) {
+        if (n % 2 == 0) {
+          return "par";
+        }
+        // Si no, retornar "impar"
+        else {
+          return "impar";
+        }
+      }
+
+      var num = parseInt(prompt("Ingrese un número entero:"));
+
+      var resultado = parOImpar(num);
+
+      console.log("El número " + num + " es: " + resultado);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+  </head>
+  <body>
+    <script>
+      var num1, num2, num3, mayor, menor;
+      num1 = Number(prompt("Ingrese el primer número:"));
+      num2 = Number(prompt("Ingrese el segundo número:"));
+      num3 = Number(prompt("Ingrese el tercer número:"));
+
+      mayor = num1;
+      menor = num1;
+
+      if (num2 > mayor) {
+        mayor = num2;
+      }
+      if (num2 < menor) {
+        menor = num2;
+      }
+
+      if (num3 > mayor) {
+        mayor = num3;
+      }
+      if (num3 < menor) {
+        menor = num3;
+      }
+
+      console.log("El mayor es: " + mayor);
+      console.log("El menor es: " + menor);
+      // Para mostrar en el navegador
+      document.write("El mayor es: " + mayor + "<br>");
+      document.write("El menor es: " + menor);
+    </script>
+  </body>
+</html>
