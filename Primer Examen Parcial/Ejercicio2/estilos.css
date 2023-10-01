@@ -1,0 +1,39 @@
+.color{
+    color:#F79646;
+}
+
+.bg-color {
+    background-color: #F79646;   
+}
+
+.formulario {
+    border: 3px solid #F79646;
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+form {
+    padding-top: 10px;
+}
+
+#mes {
+    border:2px solid #F79646;
+}
+
+#anio {
+    border:2px solid #F79646;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #FFF;
+    height: 30px;
+    border:2px solid #f17712;
+    border-radius: 10%;
+    width: 90px;
+}
