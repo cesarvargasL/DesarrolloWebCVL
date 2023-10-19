@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tres en Raya</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 30px;
+            font-weight: bold;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tres en Raya</h1>
+    <table>
+        <tr>
+            <td id="0"></td>
+            <td id="1"></td>
+            <td id="2"></td>
+        </tr>
+        <tr>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+        </tr>
+        <tr>
+            <td id="6"></td>
+            <td id="7"></td>
+            <td id="8"></td>
+        </tr>
+    </table>
+
+    <script>
+        var turno = "X";
+        var casillas = document.getElementsByTagName("td");
+
+        for (var i = 0; i < casillas.length; i++) {
+            casillas[i].addEventListener("click", function() {
+                if (this.innerHTML === "") {
+                    this.innerHTML = turno;
+                    if (turno === "X") {
+                        turno = "O";
+                    } else {
+                        turno = "X";
+                    }
+                } else {
+                    alert("La casilla esta ocupada");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

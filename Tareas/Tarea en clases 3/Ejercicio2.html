@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teclado Virtual</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            width: 30px;
+            border: 1px solid black;
+            cursor: pointer;
+            text-align: center;
+        }
+        input[type="password"] {
+            font-size: 20px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            font-size: 20px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena">
+    <button onclick="mostrarContrasena()">Mostrar</button>
+    <br><br>
+    <table>
+        <tr>
+            <td onclick="agregarCaracter('1')">1</td>
+            <td onclick="agregarCaracter('2')">2</td>
+            <td onclick="agregarCaracter('3')">3</td>
+        </tr>
+        <tr>
+            <td onclick="agregarCaracter('4')">4</td>
+            <td onclick="agregarCaracter('5')">5</td>
+            <td onclick="agregarCaracter('6')">6</td>
+        </tr>
+        <tr>
+            <td onclick="agregarCaracter('7')">7</td>
+            <td onclick="agregarCaracter('8')">8</td>
+            <td onclick="agregarCaracter('9')">9</td>
+        </tr>
+        <tr>
+            <td onclick="agregarCaracter('*')">*</td>
+            <td onclick="agregarCaracter('0')">0</td>
+            <td><button onclick="limpiarContrasena()">Limpiar</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function agregarCaracter(caracter) {
+            var contrasena = document.getElementById("contrasena");
+            contrasena.value += caracter;
+        }
+
+        function mostrarContrasena() {
+            var contrasena = document.getElementById("contrasena");
+            if (contrasena.type === "password") {
+                contrasena.type = "text";
+            } else {
+                contrasena.type = "password";
+            }
+        }
+
+        function limpiarContrasena() {
+            var contrasena = document.getElementById("contrasena");
+            contrasena.value = "";
+        }
+    </script>
+</body>
+</html>
