@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 2</title>
+</head>
+<body>
+    <img id="Imagen" src="images/corage.jfif" width="200">
+    <br>
+    <input type="number" id="numero-aumento" value="">
+    <button onclick="agrandar()">Agrandar</button>
+    <button onclick="reducir()">Reducir</button>
+
+    <script>
+        function agrandar() {
+            var img = document.getElementById('Imagen');
+            var aumento_img = document.getElementById('numero-aumento').value;
+            img.style.width = (img.offsetWidth + parseInt(aumento_img)) + "px";
+        }
+
+        function reducir() {
+            var img = document.getElementById('Imagen');
+            var disminucion_img = document.getElementById('numero-aumento').value;
+            img.style.width = (img.offsetWidth - parseInt(disminucion_img)) + "px";
+        }
+    </script>
+</body>
+</html>

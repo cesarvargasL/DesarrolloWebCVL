@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 1</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #7a92df;
+        }
+        .fila-par {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mostrar()">Mostrar</button>
+    <div id="lista"></div>
+
+    <script>
+        function mostrar() {
+            fetch('lista.php')
+                .then(response => response.json())
+                .then(data => {
+                    let tabla = '<table><tr><th>Nro</th><th>Apellidos Nombres</th><th>Edad</th><th>Materia</th><th>Not</th></tr>';
+                    data.forEach((alumno, index) => {
+                        let clase = index % 2 === 0 ? 'fila-par' : '';
+                        tabla += `<tr class="${clase}"><td>${alumno.Nro}</td><td>${alumno.Nombres}</td><td>${alumno.Edad}</td><td>${alumno.Materia}</td><td>${alumno.Not}</td></tr>`;
+                    });
+                    tabla += '</table>';
+                    document.getElementById('lista').innerHTML = tabla;
+                });
+        }
+    </script>
+</body>
+</html>

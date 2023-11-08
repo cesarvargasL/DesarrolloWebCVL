@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body {
+            background-color: #f0FEf0;
+        }
+
+        div {
+        width: 200px;
+        align-items: center;
+        }
+
+        ul {
+            list-style:circle;
+            line-height: 2;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            background-color: rgb(101, 101, 230);
+            color: #fff;
+        }
+    </style>
+    
+</head>
+<body>
+    <input type="text" id="elemento" placeholder="Añade un elemento">
+    <button onclick="añadir()">Añadir</button>
+    <div id="lista">
+        <ul id="listaUl"></ul>
+    </div>
+
+    <script>
+        var listaDeCompras = [];
+
+        function renderizarLista() {
+            var lista = document.getElementById('listaUl');
+            lista.innerHTML = '';
+            listaDeCompras.forEach(function(elemento) {
+                var li = document.createElement('li');
+                li.textContent = elemento;
+                if (elemento.includes('de')) {
+                    li.style.backgroundColor = 'yellow';
+                }
+                lista.appendChild(li);
+            });
+        }
+
+        function añadir() {
+            var elemento = document.getElementById('elemento').value;
+            listaDeCompras.push(elemento);
+            document.getElementById('elemento').value = '';
+            renderizarLista();
+        }
+    </script>
+</body>
+</html>

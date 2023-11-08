@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Alumnos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #contenedor {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        #opciones {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 200px;
+            height: 100%;
+            border-right: 1px solid black;
+        }
+        #operaciones {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 100%;
+        }
+        #operaciones table {
+            border-collapse: collapse;
+        }
+        #operaciones td, #operaciones th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #operaciones th {
+            background-color: #ccc;
+        }
+        #formulario {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 100%;
+        }
+        #formulario input[type="text"], #formulario input[type="number"] {
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        #formulario input[type="submit"] {
+            margin: 10px;
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #formulario input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="opciones">
+            <button onclick="inicio()">Inicio</button>
+            <button onclick="listar()">Listar</button>
+            <button onclick="insertar()">Insertar</button>
+        </div>
+        <div id="operaciones">
+            <h1>Bienvenidos a Alumnos 2023</h1>
+        </div>
+        <div id="formulario">
+            <form onsubmit="return insertarAlumno()">
+                <input type="text" id="nombre" placeholder="Nombre" required><br>
+                <input type="text" id="apellido" placeholder="Apellido" required><br>
+                <input type="number" id="cu" placeholder="CU" required><br>
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+</html>
