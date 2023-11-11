@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 80vh;
+}
+
+.preguntas {
+    background-color: #eef51c;
+    width: 20%;
+}
+
+.contenido-preguntas{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:2rem;
+}
+
+button{
+    border-style: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 60px;
+}
+
+.cuadros-preguntas{
+    width: 50px;
+    background-color: #FFF;
+    color: #000;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+}
+
+.boton-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0000;
+    width: 20%;
+}
+
+button {
+    border-style: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50px;
+    background-color: inherit;
+}
+
+.boton-menu h1 {
+    color:#fff;
+}
+
+.cuadro-mensaje {
+    background-color: rgb(192, 136, 15);
+    width:80%;
+}
+
+#principal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.imagen-boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.imagen-libro {
+    max-width: 100%;
+    height: auto;
+}
+
