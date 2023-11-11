@@ -14,16 +14,16 @@
           <button onclick="pregunta1()"><h1>1</h1></button>
         </div>
         <div class="cuadros-preguntas">
-            <button onclick="pregunta2()"><h1>2</h1></button>
+          <button onclick="pregunta2()"><h1>2</h1></button>
         </div>
         <div class="cuadros-preguntas">
-          <button><h1>3</h1></button>
+          <button onclick="pregunta3()"><h1>3</h1></button>
         </div>
         <div class="cuadros-preguntas">
-          <button><h1>4</h1></button>
+          <button onclick="pregunta4()"><h1>4</h1></button>
         </div>
         <div class="cuadros-preguntas">
-          <button><h1>5</h1></button>
+          <button onclick="pregunta5()"><h1>5</h1></button>
         </div>
       </div>
 
@@ -56,6 +56,40 @@
           }
         };
         ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+        ajax.send();
+      }
+
+      function pregunta4() {
+        var contenedor = document.getElementById("Contenido");
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "listar.php", true);
+        ajax.onreadystatechange = function () {
+          if (ajax.readyState == 4 && ajax.status == 200) {
+            contenedor.innerHTML = ajax.responseText;
+            var libros = Array.from(document.getElementsByClassName("libro"));
+            manejarRespuestaLibrosOrdenar(libros); // Llama a la nueva función aquí
+          }
+        };
+        ajax.send();
+      }
+
+      function pregunta5() {
+        var contenedor = document.getElementById("Contenido");
+        contenedor.innerHTML =
+          '<select id="selectLibros"></select><div id="imagenLibro"></div>';
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "datos.php", true);
+        ajax.onreadystatechange = function () {
+          if (ajax.readyState == 4 && ajax.status == 200) {
+            var libros = JSON.parse(ajax.responseText);
+            manejarRespuestaLibros(libros); 
+          }
+        };
+        ajax.setRequestHeader(
+          "Content-Type",
+          "application/json; charset=utf-8"
+        );
         ajax.send();
       }
     </script>
