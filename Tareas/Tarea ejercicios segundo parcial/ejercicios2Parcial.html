@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Ejercicios segundo parcial</title>
+    <script src="ts.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="preguntas">
+        <div class="cuadros-preguntas">
+          <button onclick="pregunta1()"><h1>1</h1></button>
+        </div>
+        <div class="cuadros-preguntas">
+            <button onclick="pregunta2()"><h1>2</h1></button>
+        </div>
+        <div class="cuadros-preguntas">
+          <button><h1>3</h1></button>
+        </div>
+        <div class="cuadros-preguntas">
+          <button><h1>4</h1></button>
+        </div>
+        <div class="cuadros-preguntas">
+          <button><h1>5</h1></button>
+        </div>
+      </div>
+
+      <div id="Contenido"></div>
+    </main>
+    <footer id="mensaje"></footer>
+    <script>
+      function pregunta1() {
+        var contenedor = document.getElementById("Contenido");
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "tresenraya.html", true);
+        ajax.onreadystatechange = function () {
+          if (ajax.readyState == 4 && ajax.status == 200) {
+            contenedor.innerHTML = ajax.responseText;
+            iniciarJuego();
+          }
+        };
+        ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+        ajax.send();
+      }
+
+      function pregunta2() {
+        var contenedor = document.getElementById("Contenido");
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", "tabla.html", true);
+        ajax.onreadystatechange = function () {
+          if (ajax.readyState == 4 && ajax.status == 200) {
+            contenedor.innerHTML = ajax.responseText;
+            iniciarTabla();
+          }
+        };
+        ajax.setRequestHeader("Content-Type", "text/html; charset=utf-8");
+        ajax.send();
+      }
+    </script>
+  </body>
+</html>

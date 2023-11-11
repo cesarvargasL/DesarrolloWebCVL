@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tres en Raya</title>
+    <style>
+      .juego {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid black;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        font-size: 50px;
+        cursor: pointer;
+        gap: 10px;
+      }
+      #turno {
+        font-size: 30px;
+        text-align: center;
+        width: 250px;
+        background-color: #2727b3;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="juego">
+      <h1>Tres en Raya</h1>
+      <table>
+        <tr>
+          <td id="0"></td>
+          <td id="1"></td>
+          <td id="2"></td>
+        </tr>
+        <tr>
+          <td id="3"></td>
+          <td id="4"></td>
+          <td id="5"></td>
+        </tr>
+        <tr>
+          <td id="6"></td>
+          <td id="7"></td>
+          <td id="8"></td>
+        </tr>
+      </table>
+      <div id="turno">Turno: X</div>
+    </div>
+  </body>
+</html>

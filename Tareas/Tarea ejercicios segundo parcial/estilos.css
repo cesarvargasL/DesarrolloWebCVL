@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.preguntas {
+    border: 2px solid #0c580c;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+}
+
+button{
+    border-style: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50px;
+}
+
+.cuadros-preguntas{
+    border: 1px solid #000;
+    width: 50px;
+}
+
+#Contenido {
+    width: 80%;
+}
+
+footer {
+    width: 100%;
+    height: 170px;
+    background-color: #0f47c0;
+}
+
