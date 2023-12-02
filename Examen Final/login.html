@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+    <h2>Login</h2>
+</div>
+<br><br><br>
+<form action="autenticar.php" method="post">
+    <label for="usuario"><b>Usuario</b></label>
+    <br>
+    <input type="text" placeholder="Ingrese su usuario" name="usuario" required>
+    <br>
+    <label for="password">contrasenia</label>
+    <br>
+    <input type="password" placeholder="Ingrese su contrasenia" name="password" id="password" readonly>
+    <br>
+    <button type="submit">Ingresar</button>
+</form>
+
+<div id="teclado_virtual">
+    <button onclick="addCharacter('1')">1</button>
+    <button onclick="addCharacter('2')">2</button>
+    <button onclick="addCharacter('3')">3</button>
+    <br>
+    <button onclick="addCharacter('4')">4</button>
+    <button onclick="addCharacter('5')">5</button>
+    <button onclick="addCharacter('6')">6</button>
+    <br>
+    <button onclick="addCharacter('7')">7</button>
+    <button onclick="addCharacter('8')">8</button>
+    <button onclick="addCharacter('9')">9</button>
+    <br>
+    <button onclick="addCharacter('A')">A</button>
+    <button onclick="addCharacter('0')">0</button>
+    <button onclick="addCharacter('C')">C</button>
+    <br>
+    
+    <button onclick="clearInput('password')">Limpiar</button>
+</div>
+
+<script>
+function addCharacter(character) {
+    document.getElementById('password').value += character;
+}
+
+function clearInput() {
+    document.getElementById('password').value = '';
+}
+</script>
+</body>
+</html>
